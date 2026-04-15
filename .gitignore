@@ -1,0 +1,18 @@
+# Local tool configs
+.claude/
+*.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Agent config (not part of deployed site)
+CLAUDE.md

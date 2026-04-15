@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Lite Translate by Tooolab Inc.." />
+  <meta property="og:title" content="Privacy Policy — Lite Translate" />
+  <meta property="og:description" content="Data collection, usage, and protection practices for Lite Translate." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="canonical" href="https://tooolab.github.io/legal/lite-translate/privacy.html" />
+  <title>Privacy Policy — Lite Translate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css" />
+  <script>!function(){var t=localStorage.getItem('theme'),d=t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches);document.documentElement.classList.toggle('dark',d);document.documentElement.classList.toggle('light',!d&&!!t)}()</script>
+</head>
+<body>
+  <noscript><div class="noscript-bar">Theme switching requires JavaScript.</div></noscript>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="logo" href="../"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg></div><span class="logo-text">Tooolab Inc.</span></a>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"></button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="doc-header">
+      <div class="tags">
+        <span class="tag">Chrome Extension</span>
+        <span class="tag">Manifest V3</span>
+      </div>
+      <h1>Privacy Policy &mdash; Lite Translate</h1>
+      <div class="doc-meta"><span>Tooolab Inc.</span><span>Effective 2026-04-13</span></div>
+    </div>
+
+    <div class="data-summary">
+      <div class="data-summary-header">Data Collection at a Glance</div>
+      <div class="data-row">
+        <div class="data-cell"><strong>Data Type</strong></div>
+        <div class="data-cell"><strong>Collected?</strong></div>
+        <div class="data-cell"><strong>Purpose</strong></div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell" data-label="Data Type">Personal information</div>
+        <div class="data-cell" data-label="Collected?"><span class="not-collected">No</span></div>
+        <div class="data-cell" data-label="Purpose">&mdash;</div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell" data-label="Data Type">Browsing history</div>
+        <div class="data-cell" data-label="Collected?"><span class="not-collected">No</span></div>
+        <div class="data-cell" data-label="Purpose">&mdash;</div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell" data-label="Data Type">Analytics / telemetry</div>
+        <div class="data-cell" data-label="Collected?"><span class="not-collected">No</span></div>
+        <div class="data-cell" data-label="Purpose">&mdash;</div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell" data-label="Data Type">User preferences</div>
+        <div class="data-cell" data-label="Collected?"><span class="collected">Local only</span></div>
+        <div class="data-cell" data-label="Purpose">Settings, glossary, UI state</div>
+      </div>
+      <div class="data-row">
+        <div class="data-cell" data-label="Data Type">Text sent to translation APIs</div>
+        <div class="data-cell" data-label="Collected?"><span class="collected">User-initiated</span></div>
+        <div class="data-cell" data-label="Purpose">Translation functionality</div>
+      </div>
+    </div>
+
+    <div class="section" id="overview">
+      <h2>1. Overview</h2>
+      <p>This Privacy Policy describes how <strong>Tooolab Inc.</strong> ("we," "our," or "us") handles information when you use <strong>Lite Translate</strong> ("the Extension"), a Chrome browser extension that provides bilingual immersive translation, selection translation, and hover translation.</p>
+      <p><strong>Lite Translate does not collect, transmit, or store any personal data on external servers.</strong> All user data is stored locally in your browser via <code>chrome.storage.local</code> and never leaves your device, except when sending text to translation APIs as described below.</p>
+    </div>
+
+    <div class="section" id="data-stored">
+      <h2>2. Data Stored Locally</h2>
+      <p>All data below is stored exclusively in your browser and is never transmitted to any external server:</p>
+      <table>
+        <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>User preferences</td><td>Language, provider, theme, feature toggles</td></tr>
+          <tr><td>Glossary terms</td><td>Custom translation term list</td></tr>
+          <tr><td>Excluded sites</td><td>Websites where translation is disabled</td></tr>
+          <tr><td>Translation cache</td><td>Cached results for performance (auto-expires after 7 days)</td></tr>
+          <tr><td>UI state</td><td>Floating ball position, onboarding flags</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="api-communication">
+      <h2>3. Translation API Communication</h2>
+      <p>When you initiate a translation, the selected text is sent to the translation API you have chosen. No other data (browsing history, personal information, page URLs, cookies) is sent to any server.</p>
+      <table>
+        <thead><tr><th>Provider</th><th>Data sent</th><th>Authentication</th></tr></thead>
+        <tbody>
+          <tr><td>Google Translate</td><td>Text to translate</td><td>None (free public API)</td></tr>
+          <tr><td>Microsoft Translator</td><td>Text to translate</td><td>None (free public API)</td></tr>
+          <tr><td>DeepL</td><td>Text to translate</td><td>Your API key</td></tr>
+          <tr><td>OpenAI Compatible</td><td>Text to translate</td><td>Your API key</td></tr>
+          <tr><td>Anthropic Claude</td><td>Text to translate</td><td>Your API key</td></tr>
+          <tr><td>Ollama</td><td>Text to translate</td><td>None (local, no internet)</td></tr>
+          <tr><td>LM Studio</td><td>Text to translate</td><td>None (local, no internet)</td></tr>
+          <tr><td>LibreTranslate</td><td>Text to translate</td><td>Depends on instance</td></tr>
+          <tr><td>Custom Endpoint</td><td>Text to translate</td><td>Your configuration</td></tr>
+        </tbody>
+      </table>
+      <p>When using third-party APIs (DeepL, OpenAI, Anthropic), their respective privacy policies apply to the text you send.</p>
+    </div>
+
+    <div class="section" id="api-keys">
+      <h2>4. API Key Storage</h2>
+      <p>If you configure a translation provider that requires an API key, it is stored locally in <code>chrome.storage.local</code>. Your API key is:</p>
+      <ul>
+        <li>Never transmitted to any server other than the API provider you configured</li>
+        <li>Never shared with us or any third party</li>
+        <li>Deletable at any time by clearing extension data or uninstalling</li>
+      </ul>
+    </div>
+
+    <div class="section" id="analytics">
+      <h2>5. Analytics &amp; Tracking</h2>
+      <p>Lite Translate contains <strong>no analytics, telemetry, tracking pixels, or third-party SDKs</strong>. We do not track your browsing activity, translation history, or usage patterns.</p>
+    </div>
+
+    <div class="section" id="permissions">
+      <h2>6. Permissions Explained</h2>
+      <table>
+        <thead><tr><th>Permission</th><th>Why it's needed</th></tr></thead>
+        <tbody>
+          <tr><td><strong>storage</strong></td><td>Save your settings and glossary locally</td></tr>
+          <tr><td><strong>activeTab</strong></td><td>Access the current page to inject translations</td></tr>
+          <tr><td><strong>contextMenus</strong></td><td>Provide right-click "Translate" menu options</td></tr>
+          <tr><td><strong>host_permissions (all URLs)</strong></td><td>Translation needs to work on any website you visit</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="deletion">
+      <h2>7. Data Deletion</h2>
+      <ul>
+        <li><strong>Uninstall</strong> the Extension to delete all locally stored data</li>
+        <li><strong>Clear cache</strong> from the Extension settings page to remove translation cache</li>
+        <li><strong>Reset defaults</strong> from the Extension settings to restore all preferences</li>
+      </ul>
+    </div>
+
+    <div class="section" id="children">
+      <h2>8. Children's Privacy</h2>
+      <p>Lite Translate does not knowingly collect any data from children under the age of <strong>13</strong>. Since the Extension collects no personal data at all, no special handling is required.</p>
+    </div>
+
+    <div class="section" id="changes">
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be reflected in the "Effective" date above. Continued use of the Extension after changes constitutes acceptance.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>10. Contact</h2>
+      <p>For any questions or privacy concerns:</p>
+      <div class="contact-box">
+        <p><strong>Tooolab Inc.</strong><br /><a href="https://github.com/tooolab/lite-translate/issues" target="_blank">Open an issue on GitHub</a> · <a href="mailto:tooolab.app@gmail.com">tooolab.app@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer><p>&copy; 2026 Tooolab Inc.</p></footer>
+  </main>
+  <script src="../app.js"></script>
+</body>
+</html>

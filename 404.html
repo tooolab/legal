@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Tooolab Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <style>
+    :root {
+      --ink: 20 20 19;
+      --background: #f5f4ed;
+      --foreground: #3d3c38;
+      --foreground: rgb(var(--ink));
+      --border: #e0dfd7;
+      --border: rgb(var(--ink) / 0.08);
+      --muted-foreground: #87867f;
+      --muted-foreground: rgb(var(--ink) / 0.5);
+      --primary: #333BFA;
+      --primary-foreground: #ffffff;
+      --ring: #333BFA;
+      --accent: #eae9e1;
+      --accent: rgb(var(--ink) / 0.04);
+      --accent-foreground: #3d3c38;
+      --accent-foreground: rgb(var(--ink));
+      --radius: 0.625rem;
+      --font: "Inter", system-ui, -apple-system, sans-serif;
+    }
+    .dark {
+      --ink: 240 238 230;
+      --background: #141413;
+      --foreground: #d4d2ca;
+      --foreground: rgb(var(--ink));
+      --border: #2a2a28;
+      --border: rgb(var(--ink) / 0.08);
+      --muted-foreground: #87867f;
+      --muted-foreground: rgb(var(--ink) / 0.5);
+      --primary: #6B71FF;
+      --primary-foreground: #141413;
+      --ring: #6B71FF;
+      --accent: #1e1e1c;
+      --accent: rgb(var(--ink) / 0.04);
+      --accent-foreground: #d4d2ca;
+      --accent-foreground: rgb(var(--ink));
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not(.light) {
+        --ink: 240 238 230;
+        --background: #141413;
+        --foreground: #d4d2ca;
+        --foreground: rgb(var(--ink));
+        --border: #2a2a28;
+        --border: rgb(var(--ink) / 0.08);
+        --muted-foreground: #87867f;
+        --muted-foreground: rgb(var(--ink) / 0.5);
+        --primary: #6B71FF;
+        --primary-foreground: #141413;
+        --ring: #6B71FF;
+        --accent: #1e1e1c;
+        --accent: rgb(var(--ink) / 0.04);
+        --accent-foreground: #d4d2ca;
+        --accent-foreground: rgb(var(--ink));
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--background); color: var(--foreground); font-family: var(--font); font-size: 17px; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+    .site-header { position: sticky; top: 0; z-index: 50; background: var(--background); border-bottom: 1px solid var(--border); }
+    .site-header-inner { max-width: 1080px; margin: 0 auto; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 8px; color: var(--foreground); text-decoration: none; }
+    .logo-icon { width: 28px; height: 28px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { color: var(--primary-foreground); }
+    .logo-text { font-size: 14px; font-weight: 600; letter-spacing: -0.01em; }
+    .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: var(--radius); border: none; background: transparent; color: var(--muted-foreground); cursor: pointer; transition: background 150ms, color 150ms; }
+    .icon-btn:hover { background: var(--accent); color: var(--accent-foreground); }
+    .icon-btn svg { width: 20px; height: 20px; }
+    .error-page { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: calc(100vh - 56px); padding: 24px; }
+    .error-page h1 { font-size: 36px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 12px; }
+    .error-meta { font-size: 14px; color: var(--muted-foreground); margin-bottom: 24px; }
+    .error-link { font-size: 14px; color: var(--primary); text-decoration: none; }
+    .error-link:hover { text-decoration: underline; }
+    :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.01ms !important; } }
+  </style>
+  <script>!function(){var t=localStorage.getItem('theme'),d=t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches);document.documentElement.classList.toggle('dark',d);document.documentElement.classList.toggle('light',!d&&!!t)}()</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="logo" href="./"><div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/></svg></div><span class="logo-text">Tooolab Inc.</span></a>
+      <button class="icon-btn" data-theme-toggle aria-label="Toggle theme"></button>
+    </div>
+  </header>
+  <main class="error-page">
+    <h1>404</h1>
+    <p class="error-meta">Page not found</p>
+    <a class="error-link" href="./">Back to Legal</a>
+  </main>
+  <script>
+    (function(){var r=document.documentElement;document.addEventListener('click',function(e){var b=e.target.closest('[data-theme-toggle]');if(!b)return;var d=r.classList.toggle('dark');r.classList.toggle('light',!d);localStorage.setItem('theme',d?'dark':'light');b.innerHTML=d?'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>':'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>'});document.querySelectorAll('[data-theme-toggle]').forEach(function(b){b.innerHTML=r.classList.contains('dark')?'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>':'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>'})})()
+  </script>
+</body>
+</html>
